@@ -1,5 +1,15 @@
-<ion-view view-title="Search">
+<ion-view view-title="Location Search">
   <ion-content>
-    <h1>Search</h1>
+    <div class="list">
+      <label class="item item-input">
+        <i class="icon ion-ios-search-strong placeholder-icon"></i>
+        <input type="text" placeholder="Enter City and State" ng-model="$parent.query" ng-change="queryChanged()">
+      </label>
+    </div>
+    <!-- <div class="card">
+      <div class="item item-text-wrap">
+        This is a basic Card which contains an item that has wrapping text.
+      </div>
+    </div> -->
   </ion-content>
 </ion-view>
