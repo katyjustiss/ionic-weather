@@ -7,9 +7,17 @@ angular.module('weather.search', [])
           params: { address: $scope.query}
         })
         .success(function (data) {
-          console.log(data);
+          $scope.locations = data.results;
         });
       }, 2000);
-    //display the cities. The user can click which one they want.
+
+    // $scope.getWeather = function() {
+
+    //   $http
+    //     .get()
+    //     .success(function (res) {
+    //       $scope.weather = res;
+    //     })
+    // }
 
   });
