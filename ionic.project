@@ -1,4 +1,10 @@
 {
   "name": "ionic-weather",
-  "app_id": ""
+  "app_id": "",
+  "proxies" : [
+    {
+      "path" : "/api/forecast",
+      "proxyUrl" : "https://api.forecast.io/forecast/4d8af6d0c2fb559de92cee1803f741d7/"
+    }
+  ]
 }

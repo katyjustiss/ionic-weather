@@ -10,14 +10,4 @@ angular.module('weather.search', [])
           $scope.locations = data.results;
         });
       }, 2000);
-
-    // $scope.getWeather = function() {
-
-    //   $http
-    //     .get()
-    //     .success(function (res) {
-    //       $scope.weather = res;
-    //     })
-    // }
-
   });

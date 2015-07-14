@@ -41,17 +41,17 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('weatherCtrl', function($scope) {
-  $scope.weather = [
-    { title: 'Sunday', id: 1 },
-    { title: 'Monday', id: 2 },
-    { title: 'Tuesday', id: 3 },
-    { title: 'Wednesday', id: 4 },
-    { title: 'Thursday', id: 5 },
-    { title: 'Friday', id: 6 },
-    { title: 'Saturday', id: 6 }
-  ];
-})
+// .controller('weatherCtrl', function($scope) {
+//   $scope.weather = [
+//     { title: 'Sunday', id: 1 },
+//     { title: 'Monday', id: 2 },
+//     { title: 'Tuesday', id: 3 },
+//     { title: 'Wednesday', id: 4 },
+//     { title: 'Thursday', id: 5 },
+//     { title: 'Friday', id: 6 },
+//     { title: 'Saturday', id: 6 }
+//   ];
+// })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 })
