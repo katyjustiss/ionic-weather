@@ -6,7 +6,6 @@
   },
   "dependencies": {
     "lodash": "~3.10.0",
-    "angular-skycons": "~2.0.2",
-    "skycons": "*"
+    "angular-skycons": "~2.0.2"
   }
 }

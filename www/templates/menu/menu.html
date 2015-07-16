@@ -26,10 +26,24 @@
           <i class="icon ion-android-settings"></i>
           Settings
         </ion-item>
+        <div class="item item-divider">
+          Location
+        </div>
+        <ion-item menu-close>
+          <i class="icon ion-navigate"></i>
+          Current Location
+        </ion-item>
         <!-- divider -->
         <!-- item for each location -->
         <div class="item item-divider">
           Favorites
+        </div>
+        <ion-item menu-close ng-repeat="location in favorites">
+          <i class="icon ion-android-favorite"></i>
+          {{location.city}}
+        </ion-item>
+        <div class="item item-divider">
+          Recent Searches
         </div>
         <ion-item menu-close ng-repeat="location in favorites">
           <i class="icon ion-ios-location"></i>

@@ -10,6 +10,7 @@ angular.module('starter', [
   'weather.search',
   'weather.weather',
   'weather.settings',
+  'weather.menu',
   'angular-skycons'
   ])
 
@@ -33,8 +34,8 @@ angular.module('starter', [
   .state('app', {
     url: "/app",
     abstract: true,
-    templateUrl: "templates/menu.html",
-    controller: 'SettingsCtrl'
+    templateUrl: "templates/menu/menu.html",
+    controller: 'MenuCtrl'
   })
 
   .state('app.search', {
