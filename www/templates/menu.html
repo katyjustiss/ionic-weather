@@ -18,10 +18,6 @@
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close ui-sref="app.weather">
-          <i class="icon ion-ios-home"></i>
-          My Weather
-        </ion-item>
         <ion-item menu-close ui-sref="app.search">
           <i class="icon ion-search"></i>
           Find a City
@@ -29,6 +25,15 @@
         <ion-item menu-close ui-sref="app.settings">
           <i class="icon ion-android-settings"></i>
           Settings
+        </ion-item>
+        <!-- divider -->
+        <!-- item for each location -->
+        <div class="item item-divider">
+          Favorites
+        </div>
+        <ion-item menu-close ng-repeat="location in favorites">
+          <i class="icon ion-ios-location"></i>
+          {{location.city}}
         </ion-item>
       </ion-list>
     </ion-content>

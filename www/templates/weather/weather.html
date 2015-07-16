@@ -1,10 +1,18 @@
 <ion-view view-title="{{city}}">
   <ion-content>
-    <h1>Weather</h1>
-<!--     <ion-list>
-      <ion-item ng-repeat="playlist in weather" href="#/app/weather/{{playlist.id}}">
-        {{playlist.title}}
-      </ion-item>
-    </ion-list> -->
+    <h1>Current Weather</h1>
+      <div class="list card">
+
+        <div class="item">
+          <div class="item item-image">
+            <skycon icon="weather.icon"></skycon>
+          </div>
+
+          <h2 ng-hide="weather">--°{{scale}}</h2>
+          <h2 ng-show="weather">{{weather.temperature | number:precision}}°{{scale}}</h2>
+          <h3> {{weather.summary}}
+        </div>
+
+      </div>
   </ion-content>
 </ion-view>
