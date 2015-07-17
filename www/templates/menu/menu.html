@@ -1,4 +1,4 @@
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus enable-menu-with-back-views="false" ng-controller="MenuCtrl">
   <ion-side-menu-content>
     <ion-nav-bar class="bar-dark">
       <ion-nav-back-button>
@@ -38,16 +38,16 @@
         <div class="item item-divider">
           Favorites
         </div>
-        <ion-item menu-close ng-repeat="location in favorites">
+        <ion-item menu-close ng-repeat="fav in favorites">
           <i class="icon ion-android-favorite"></i>
-          {{location.city}}
+          {{fav.city}}
         </ion-item>
-        <div class="item item-divider">
+<!--         <div class="item item-divider">
           Recent Searches
         </div>
-        <ion-item menu-close ng-repeat="location in favorites">
+        <ion-item menu-close ng-repeat="fav in favorites">
           <i class="icon ion-ios-location"></i>
-          {{location.city}}
+          {{fav.city}} -->
         </ion-item>
       </ion-list>
     </ion-content>

@@ -1,19 +1,22 @@
 <ion-view view-title="{{city}}">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-android-favorite-outline" ng-click="makeFavorite({city:params.city, lat:params.lat, long:params.long})">
+    </button>
+  </ion-nav-buttons>
   <ion-content>
-    <h1>Current Weather</h1>
+    <h3 class="content">Current Weather</h3>
       <div class="list card">
 
-        <div class="item">
+        <div class="item item-body">
           <div class="item item-image">
             <skycon icon="weather.icon"></skycon>
           </div>
           <div class="content">
             <h2 ng-hide="weather">--°{{scale}}</h2>
             <h2 ng-show="weather">{{weather.temperature | number:precision}}°{{scale}}</h2>
-            <h3> {{weather.summary}}</h3>
+            <p> {{weather.summary}}</p>
           </div>
         </div>
-
       </div>
   </ion-content>
 </ion-view>

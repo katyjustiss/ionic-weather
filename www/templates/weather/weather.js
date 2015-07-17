@@ -21,7 +21,7 @@ angular.module('weather.weather', [])
     var API_URL = '/api/forecast/';
     var SI_PARAM = 'units=si';
 
-    return {
+    return { //url addapted for Celsius
       getWeather: function (lat, long) {
         var url = API_URL + lat + ',' + long + '?units=';
 
