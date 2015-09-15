@@ -6,7 +6,6 @@ angular.module('weather.menu', [])
 
   $rootScope.$on('menuItemChanged', function(event, message) {
     $scope.favorites = location.favorites;
-    //console.log('Hello', message); //could console a message
   })
 
   $scope.makeFavorite = function(obj) {
